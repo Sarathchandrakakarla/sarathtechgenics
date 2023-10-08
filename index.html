@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="css/footer.css" />
+    <!-- <link rel="stylesheet" href="css/footer.css" /> -->
 
     <!-- Bootstrap CSS -->
     <link
@@ -201,7 +201,6 @@
         cursor: pointer;
       }
       .services-images .row:nth-child(1) .column:nth-child(1) {
-        
         background-size: cover;
       }
       .services-images .row:nth-child(1) .column:nth-child(2) {
@@ -237,6 +236,20 @@
       .client-container img {
         width: 100px;
         border-radius: 50%;
+      }
+
+      footer{
+        position: absolute;
+        top: 3400px;
+        background-color: #3f3d56;
+        color: #fff;
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+      }
+      footer a{
+        color: #fff;
+        text-decoration: underline;
       }
 
       @media (max-width: 500px) {
@@ -301,6 +314,10 @@
         .client-container {
           margin-left: 35%;
           flex-direction: column;
+        }
+
+        footer{
+          top: 5500px;
         }
       }
 
@@ -501,16 +518,40 @@
           </div>
           <div class="services-images">
             <div class="row">
-              <div class="column" style="background-image: url('Images/sc2.png');" onclick="myFunction(this);"></div>
-              <div class="column" style="background-image: url('Images/sc3.png');" onclick="myFunction(this);"></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc2.png')"
+                onclick="myFunction(this);"
+              ></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc3.png')"
+                onclick="myFunction(this);"
+              ></div>
             </div>
             <div class="row">
-              <div class="column" style="background-image: url('Images/sc4.png');" onclick="myFunction(this);"></div>
-              <div class="column" style="background-image: url('Images/sc5.png');" onclick="myFunction(this);"></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc4.png')"
+                onclick="myFunction(this);"
+              ></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc5.png')"
+                onclick="myFunction(this);"
+              ></div>
             </div>
             <div class="row">
-              <div class="column" style="background-image: url('Images/sc6.png');" onclick="myFunction(this);"></div>
-              <div class="column" style="background-image: url('Images/sc7.png');" onclick="myFunction(this);"></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc6.png')"
+                onclick="myFunction(this);"
+              ></div>
+              <div
+                class="column"
+                style="background-image: url('Images/sc7.png')"
+                onclick="myFunction(this);"
+              ></div>
             </div>
           </div>
         </div>
@@ -561,7 +602,11 @@
         <div class="text-center">
           <h4>Contact</h4>
           <p>
-            <strong>Email: </strong><a href="mailto:kakarlasarath4@gmail.com">kakarlasarath4@gmail.com</a> <br>
+            <strong>Email: </strong
+            ><a href="mailto:kakarlasarath4@gmail.com"
+              >kakarlasarath4@gmail.com</a
+            >
+            <br />
             <strong>Mobile: </strong>9515744884
           </p>
         </div>
@@ -623,23 +668,21 @@
       </div>
     </div>
 
-    <!--
-  <footer>
-    <div class="footer-bottom">
-      <p>
-        &copy;
-        <span id="year"></span>, <a href="">Sarath Techgenics </a> | All
-        Rights Reserved.
-      </p>
-    </div>
-  </footer>
-  -->
+    <footer>
+      <div class="footer-bottom">
+        <p>
+          &copy;
+          <span id="year"></span>, <a href="">Sarath Techgenics </a> | All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <!-- Image zoom -->
     <script type="text/javascript">
       function myFunction(imgs) {
-        imgpath = imgs.style.backgroundImage.slice(4, -1).replace(/"/g, "")
+        imgpath = imgs.style.backgroundImage.slice(4, -1).replace(/"/g, "");
         Swal.fire({
           imageUrl: imgpath,
           imageWidth: "80%",
