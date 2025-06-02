@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.securehive",
+      "sha256_cert_fingerprints": [
+        "20:F9:0F:FD:3D:40:0E:C7:2E:9D:17:F7:15:27:07:A5:77:29:8D:97:E0:31:BD:57:EA:D6:42:1B:55:AB:CA:9E"
+      ]
+    }
+  }
+]
